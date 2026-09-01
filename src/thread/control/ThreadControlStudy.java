@@ -8,7 +8,8 @@ public class ThreadControlStudy {
         interruptFlagExample();
         interruptSleepExample();
         interruptedMethodExample();
-
+        printerV2Example();
+        printerV3Example();
         printerV1Example();
         printerV2Example();
         printerV3Example();
@@ -165,7 +166,7 @@ public class ThreadControlStudy {
 
     private static void runYieldTask(String name) {
         for (int i = 1; i <= 5; i++) {
-            System.out.println(name = " = " + i);
+            System.out.println(name + " = " + i);
 
             Thread.yield();
         }
