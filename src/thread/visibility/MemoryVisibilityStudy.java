@@ -94,7 +94,8 @@ public class MemoryVisibilityStudy {
             public void stop() {
                 running = false;
             }
-
+            
+            @Override
             public void run() {
                 System.out.println("volatile worker start");
 
@@ -111,7 +112,8 @@ public class MemoryVisibilityStudy {
             public void stop() {
                 running = false;
             }
-
+            
+            @Override
             public void run() {
                 System.out.println("non-volatile worker start");
 
